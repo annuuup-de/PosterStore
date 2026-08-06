@@ -236,7 +236,7 @@ Price: ₹${price}
 
 Can I place an order?`;
 
-        const phone = "919876543210";
+        const phone = "919902621043";
 
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 

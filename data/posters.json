@@ -42,7 +42,7 @@
   {
     "id": 3,
     "title": "BMW",
-    "featured": true,
+    "featured": false,
     "category": "Cars",
     "type": "single",
     "panels": 3,
@@ -76,6 +76,26 @@
 
     "images": [
       "assets/images/posters/single/movies/hulk.png"
+    ]
+  },
+
+       {
+    "id": 5,
+    "title": "F1",
+    "featured": true,
+    "category": "Cars",
+    "type": "single",
+    "panels": 1,
+
+    "badge": "Best Seller",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349
+    },
+
+    "images": [
+      "assets/images/posters/single/cars/f1.png"
     ]
   }
 ]
