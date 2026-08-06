@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "slug": "gojo-satoru",
+    "title": "Gojo Satoru",
+    "category": "Anime",
+    "series": "Jujutsu Kaisen",
+    "featured": true,
+    "badge": "Best Seller",
+    "rating": 5,
+    "paper": "250 GSM Premium Glossy",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349,
+      "A2": 599
+    },
+
+    "description": "Premium glossy anime poster with vibrant colors.",
+
+    "image": "assets/images/posters/anime/gojo.jpg"
+  },
+
+  {
+    "id": 2,
+    "slug": "batman-dark",
+    "title": "Batman",
+    "category": "DC",
+    "series": "Batman",
+    "featured": true,
+    "badge": "New",
+    "rating": 5,
+    "paper": "250 GSM Premium Glossy",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349,
+      "A2": 599
+    },
+
+    "description": "Dark Batman wall poster.",
+
+    "image": "assets/images/posters/dc/batman.jpg"
+  },
+
+  {
+    "id": 3,
+    "slug": "spiderman",
+    "title": "Spider-Man",
+    "category": "Marvel",
+    "series": "Marvel",
+    "featured": true,
+    "badge": "Popular",
+    "rating": 5,
+    "paper": "250 GSM Premium Glossy",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349,
+      "A2": 599
+    },
+
+    "description": "Marvel Spider-Man poster.",
+
+    "image": "assets/images/posters/marvel/spiderman.jpg"
+  },
+
+  {
+    "id": 4,
+    "slug": "ferrari-f40",
+    "title": "Ferrari F40",
+    "category": "Cars",
+    "series": "Supercars",
+    "featured": false,
+    "badge": "",
+    "rating": 5,
+    "paper": "250 GSM Premium Glossy",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349,
+      "A2": 599
+    },
+
+    "description": "Legendary Ferrari F40 poster.",
+
+    "image": "assets/images/posters/cars/f40.jpg"
+  }
+]

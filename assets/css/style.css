@@ -1,0 +1,893 @@
+/* ===============================
+   GOOGLE FONT
+==================================*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
+
+/* ===============================
+   ROOT VARIABLES
+==================================*/
+
+:root{
+
+    --primary:#5B5FEF;
+    --secondary:#7C3AED;
+    --accent:#FF4D6D;
+
+    --dark:#0F172A;
+    --dark2:#1E293B;
+
+    --light:#F8FAFC;
+    --gray:#64748B;
+
+    --white:#FFFFFF;
+
+    --shadow:0 15px 40px rgba(0,0,0,.12);
+
+    --transition:.35s ease;
+
+    --radius:18px;
+
+}
+
+/* ===============================
+   GLOBAL
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+    background:#F5F7FB;
+    color:#222;
+    overflow-x:hidden;
+
+}
+
+section{
+
+    padding:90px 0;
+
+}
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.section-title h2{
+
+    font-weight:700;
+    font-size:2.4rem;
+
+}
+
+.section-title p{
+
+    color:var(--gray);
+
+}
+
+/* ===============================
+   NAVBAR
+==================================*/
+
+.custom-navbar{
+
+    background:rgba(15,23,42,.75);
+    backdrop-filter:blur(12px);
+
+    transition:.4s;
+
+    padding:18px 0;
+
+}
+
+.navbar-brand{
+
+    color:white !important;
+    font-size:1.5rem;
+
+}
+
+.nav-link{
+
+    color:white !important;
+    margin-left:18px;
+    transition:var(--transition);
+
+}
+
+.nav-link:hover{
+
+    color:#FFD43B !important;
+
+}
+
+.navbar .btn{
+
+    font-weight:600;
+
+}
+
+/* ===============================
+   HERO
+==================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    background:
+    linear-gradient(135deg,#4F46E5,#7C3AED,#9333EA);
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-250px;
+    right:-150px;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:50%;
+
+    left:-150px;
+    bottom:-120px;
+
+}
+
+.hero .container{
+
+    position:relative;
+    z-index:2;
+
+}
+
+.hero-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.hero h1{
+
+    line-height:1.2;
+
+}
+
+.hero p{
+
+    max-width:540px;
+
+}
+
+.hero-image{
+
+    max-width:520px;
+
+    animation:float 5s ease-in-out infinite;
+
+    filter:drop-shadow(0 25px 50px rgba(0,0,0,.35));
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ===============================
+   BUTTONS
+==================================*/
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}
+
+/* ===============================
+   STATS
+==================================*/
+
+.stats{
+
+    background:white;
+
+}
+
+.stats h2{
+
+    color:var(--primary);
+    font-size:2.4rem;
+
+}
+
+.stats p{
+
+    color:var(--gray);
+
+}
+
+/* ===============================
+   CATEGORY CARD
+==================================*/
+
+.category-card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    font-size:2.3rem;
+
+}
+
+.category-card h5{
+
+    margin-top:18px;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-12px);
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ===============================
+   FEATURED
+==================================*/
+
+.featured{
+
+    background:#F8FAFC;
+
+}
+
+/* ===============================
+   POSTER CARD
+==================================*/
+
+.poster-card{
+
+    border:none;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.poster-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.poster-card img{
+
+    height:360px;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.poster-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.poster-body{
+
+    padding:20px;
+
+}
+
+.poster-category{
+
+    color:var(--primary);
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.poster-title{
+
+    font-weight:700;
+
+    margin-top:10px;
+
+}
+
+.poster-price{
+
+    font-size:1.3rem;
+
+    color:var(--accent);
+
+    font-weight:700;
+
+}
+
+/* ===============================
+   WHY US
+==================================*/
+
+.feature-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.feature-box i{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===============================
+   CTA
+==================================*/
+
+.cta{
+
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+
+    color:white;
+
+}
+
+.cta h2{
+
+    font-size:2.6rem;
+
+    margin-bottom:20px;
+
+}
+
+/* ===============================
+   FOOTER
+==================================*/
+
+footer{
+
+    background:#0F172A;
+
+    color:white;
+
+    padding:60px 0 20px;
+
+}
+
+footer h5{
+
+    margin-bottom:18px;
+
+}
+
+footer a{
+
+    color:#CBD5E1;
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:white;
+
+    padding-left:8px;
+
+}
+
+.social-icon{
+
+    font-size:1.5rem;
+
+    margin-right:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.social-icon:hover{
+
+    color:#FFD43B;
+
+}
+
+/* ===============================
+   WHATSAPP
+==================================*/
+
+.whatsapp-btn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    z-index:999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+.whatsapp-btn:hover{
+
+    transform:scale(1.12);
+
+    color:white;
+
+}
+
+/* ===============================
+   SCROLL TOP
+==================================*/
+
+#scrollTop{
+
+    position:fixed;
+
+    bottom:100px;
+
+    right:28px;
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:none;
+
+    z-index:999;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+#scrollTop:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===============================
+   ANIMATIONS
+==================================*/
+
+.category-card,
+.poster-card,
+.feature-box{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===============================
+   RESPONSIVE
+==================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+padding-top:120px;
+
+}
+
+.hero p{
+
+margin:auto;
+
+}
+
+.hero-image{
+
+margin-top:60px;
+
+max-width:380px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:2.7rem;
+
+}
+
+.section-title h2{
+
+font-size:2rem;
+
+}
+
+.poster-card img{
+
+height:300px;
+
+}
+
+.stats .col-md-3{
+
+margin-bottom:25px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+
+padding-top:120px;
+
+}
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+.hero-image{
+
+max-width:300px;
+
+}
+
+.category-card{
+
+padding:25px;
+
+font-size:1.8rem;
+
+}
+
+.feature-box{
+
+padding:30px;
+
+}
+
+.cta h2{
+
+font-size:2rem;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+   BUTTON RIPPLE EFFECT
+==================================*/
+
+.btn{
+    position:relative;
+    overflow:hidden;
+}
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    animation:ripple .6s linear;
+
+    background:rgba(255,255,255,.5);
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Small Hero */
+
+.hero-small{
+
+    min-height:45vh;
+
+    padding-top:120px;
+
+}
+
+/* Category Buttons */
+
+.category-btn{
+
+    border-radius:50px;
+
+    padding:10px 20px;
+
+    font-weight:600;
+
+}
+
+/* Search */
+
+.input-group{
+
+    box-shadow:var(--shadow);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+    border:none;
+
+}
+
+.form-control{
+
+    border:none;
+
+    padding:14px;
+
+}
+
+.form-select{
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    padding:14px;
+
+}
+
+
+
+
+
+
+/* Badge */
+
+.badge{
+
+    font-size:.75rem;
+
+    border-radius:50px;
+
+    padding:8px 12px;
+
+}
+
+/* Hide Load More */
+
+.d-none{
+
+    display:none!important;
+
+}
