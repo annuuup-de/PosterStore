@@ -465,23 +465,151 @@ img{
 
 }
 
-/* ===============================
-   CTA
-==================================*/
+/* ==========================================
+   CTA SECTION
+========================================== */
 
-.cta{
+.cta {
 
-    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+    position: relative;
 
-    color:white;
+    overflow: hidden;
+
+    padding: 120px 0;
+
+    background: linear-gradient(
+        135deg,
+        #4F46E5 0%,
+        #6D28D9 50%,
+        #9333EA 100%
+    );
+
+    color: #fff;
 
 }
 
-.cta h2{
+/* Glass Glow */
 
-    font-size:2.6rem;
+.cta::before {
 
-    margin-bottom:20px;
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.08);
+
+    top: -180px;
+    left: -120px;
+
+    filter: blur(20px);
+
+}
+
+/* Bottom Circle */
+
+.cta::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,.06);
+
+    bottom: -130px;
+    right: -90px;
+
+    filter: blur(15px);
+
+}
+
+/* Grid Pattern */
+
+.cta .container::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.05) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.05) 1px,
+            transparent 1px
+        );
+
+    background-size: 35px 35px;
+
+    mask-image: radial-gradient(circle, black 45%, transparent 95%);
+
+    pointer-events: none;
+
+}
+
+/* Keep content above background */
+
+.cta .container {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.cta-title {
+
+    font-size: 3rem;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
+
+}
+
+.cta-text {
+
+    max-width: 650px;
+
+    margin: auto auto 35px;
+
+    font-size: 1.15rem;
+
+    opacity: .9;
+
+}
+
+.cta .btn {
+
+    padding: 14px 40px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.cta .btn:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
 
 }
 
