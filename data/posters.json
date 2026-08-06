@@ -19,8 +19,28 @@
     ]
   },
 
-  {
+   {
     "id": 2,
+    "title": "Ghost - Call of Duty",
+    "featured": true,
+    "category": "Gaming",
+    "type": "single",
+    "panels": 1,
+
+    "badge": "Best Seller",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349
+    },
+
+    "images": [
+      "assets/images/posters/single/games/ghost.png"
+    ]
+  },
+
+  {
+    "id": 3,
     "title": "BMW",
     "featured": true,
     "category": "Cars",
@@ -36,6 +56,26 @@
 
     "images": [
       "assets/images/posters/single/cars/bmw.jpg"
+    ]
+  },
+
+     {
+    "id": 4,
+    "title": "Hulk",
+    "featured": true,
+    "category": "Movies",
+    "type": "single",
+    "panels": 1,
+
+    "badge": "Best Seller",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349
+    },
+
+    "images": [
+      "assets/images/posters/single/movies/hulk.png"
     ]
   }
 ]
