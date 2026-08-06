@@ -343,13 +343,199 @@ img{
 
 }
 
-/* ===============================
-   FEATURED
-==================================*/
+/* ==========================================
+   Featured Section
+========================================== */
 
-.featured{
+.featured-section{
 
-    background:#F8FAFC;
+    position:relative;
+
+    overflow:hidden;
+
+    padding:100px 0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8f9ff 100%
+        );
+
+}
+
+/* Background Glow */
+
+.featured-bg{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+}
+
+.featured-bg::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:#6D28D915;
+
+    top:-180px;
+
+    right:-150px;
+
+    filter:blur(70px);
+
+}
+
+.featured-bg::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:#4F46E515;
+
+    bottom:-150px;
+
+    left:-100px;
+
+    filter:blur(70px);
+
+}
+
+/* Grid */
+
+.featured-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(#00000008 1px,transparent 1px),
+
+        linear-gradient(90deg,#00000008 1px,transparent 1px);
+
+    background-size:40px 40px;
+
+    opacity:.5;
+
+}
+
+/* Title */
+
+.featured-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    border-radius:100px;
+
+    background:#EEF2FF;
+
+    color:#4F46E5;
+
+    font-weight:600;
+
+}
+
+.featured-section h2{
+
+    font-weight:800;
+
+}
+
+.featured-section p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#6c757d;
+
+}
+
+/* Featured Cards */
+
+.featured-section .poster-card{
+
+    transition:.35s;
+
+    border:none;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    box-shadow:
+
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.featured-section .poster-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+
+        0 25px 50px rgba(79,70,229,.18);
+
+}
+
+.featured-section .poster-card img{
+
+    transition:.45s;
+
+}
+
+.featured-section .poster-card:hover img{
+
+    transform:scale(1.06);
+
+}
+
+/* Button */
+
+.featured-section .btn{
+
+    padding:14px 40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.featured-section .btn:hover{
+
+    transform:translateY(-3px);
 
 }
 
