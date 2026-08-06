@@ -103,35 +103,7 @@ Example:
 
 Customers can place an order directly through WhatsApp.
 
-To change the WhatsApp number:
 
-Open:
-
-```text
-assets/js/poster.js
-```
-
-Replace:
-
-```javascript
-const phone = "919876543210";
-```
-
-with your own WhatsApp number (including country code).
-
-Example:
-
-```javascript
-const phone = "919876543210";
-```
-
-Do not include:
-
-- +
-- spaces
-- hyphens
-
----
 
 ## 🚀 Running the Project
 
@@ -246,16 +218,5 @@ Print Files
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
-Feel free to use and modify it for personal or commercial projects.
-
----
-
-## 👨‍💻 Author
-
-Developed by **Anup**
 
 If you like this project, consider giving it a ⭐ on GitHub!
