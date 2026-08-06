@@ -108,84 +108,74 @@ function smoothScrolling() {
    (Temporary demo data)
 ===================================================== */
 
-function loadFeaturedPosters() {
+/* =====================================================
+   Featured Posters
+===================================================== */
+
+async function loadFeaturedPosters() {
 
     const container = document.getElementById("featuredPosters");
 
     if (!container) return;
 
-    const posters = [
+    try {
 
-        {
-            title: "Gojo Satoru",
-            category: "Anime",
-            price: "₹199",
-            image: "assets/images/posters/anime/gojo.jpg"
-        },
+        const response = await fetch("data/posters.json");
 
-        {
-            title: "Batman",
-            category: "DC",
-            price: "₹199",
-            image: "assets/images/posters/dc/batman.jpg"
-        },
+        const posters = await response.json();
 
-        {
-            title: "Ferrari F40",
-            category: "Cars",
-            price: "₹199",
-            image: "assets/images/posters/cars/f40.jpg"
-        },
+        const featured = posters.filter(
 
-        {
-            title: "Spider-Man",
-            category: "Marvel",
-            price: "₹199",
-            image: "assets/images/posters/marvel/spiderman.jpg"
-        }
+            poster => poster.featured === true
 
-    ];
+        );
 
-    posters.forEach(poster => {
+        container.innerHTML = "";
 
-        container.innerHTML += `
+        featured.forEach(poster => {
 
-        <div class="col-lg-3 col-md-6">
+            container.innerHTML += `
 
-            <div class="poster-card">
+            <div class="col-lg-3 col-md-6">
 
-                <img src="${poster.image}"
-                     alt="${poster.title}"
-                     loading="lazy">
+                <div class="poster-card h-100">
 
-                <div class="poster-body">
+                    <img
+                        src="${poster.images[0]}"
+                        alt="${poster.title}"
+                        loading="lazy">
 
-                    <div class="poster-category">
+                    <div class="poster-body">
 
-                        ${poster.category}
+                        <div class="poster-category">
 
-                    </div>
+                            ${poster.category}
 
-                    <h5 class="poster-title">
+                        </div>
 
-                        ${poster.title}
+                        <h5 class="poster-title">
 
-                    </h5>
+                            ${poster.title}
 
-                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        </h5>
 
-                        <span class="poster-price">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
 
-                            ${poster.price}
+                            <span class="poster-price">
 
-                        </span>
+                                ₹${poster.sizes.A4}
 
-                        <a href="poster.html"
-                           class="btn btn-sm btn-primary rounded-pill">
+                            </span>
 
-                            View
+                            <a
+                                href="poster.html?id=${poster.id}"
+                                class="btn btn-sm btn-primary rounded-pill">
 
-                        </a>
+                                View
+
+                            </a>
+
+                        </div>
 
                     </div>
 
@@ -193,14 +183,17 @@ function loadFeaturedPosters() {
 
             </div>
 
-        </div>
+            `;
 
-        `;
+        });
 
-    });
+    } catch (error) {
+
+        console.error("Failed to load featured posters:", error);
+
+    }
 
 }
-
 /* =====================================================
    Hero Mouse Parallax
 ===================================================== */
