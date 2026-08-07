@@ -785,6 +785,54 @@ img{
 
 }
 
+@media (max-width: 991.98px) {
+
+    .hero-modern {
+
+        text-align: center;
+
+    }
+
+    .hero-title {
+
+        font-size: 2.8rem;
+
+    }
+
+    .hero-subtitle {
+
+        max-width: 100%;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-badge {
+
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .hero-image-column {
+
+        display: none;
+
+    }
+
+}
+
 /* ===============================
    BUTTONS
 ==================================*/
