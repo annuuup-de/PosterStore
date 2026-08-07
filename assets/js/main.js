@@ -40,6 +40,27 @@ function navbarScrollEffect() {
 
 }
 
+
+/* =====================================================
+   navbar shrink when scrolling
+===================================================== */
+
+window.addEventListener("scroll", () => {
+
+    const navbar = document.querySelector(".modern-navbar");
+
+    if (window.scrollY > 50) {
+
+        navbar.style.padding = "12px 0";
+
+    } else {
+
+        navbar.style.padding = "18px 0";
+
+    }
+
+});
+
 /* =====================================================
    Scroll To Top Button
 ===================================================== */
