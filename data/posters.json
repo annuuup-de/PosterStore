@@ -15,7 +15,7 @@
     },
 
     "images": [
-      "assets/images/posters/single/cars/gtr.jpg"
+      "assets/images/posters/single/cars/gtr-thumbnail.png"
     ]
   },
 
@@ -35,7 +35,7 @@
     },
 
     "images": [
-      "assets/images/posters/single/games/ghost.png"
+      "assets/images/posters/single/games/ghost-thumbnail.png"
     ]
   },
 
@@ -55,7 +55,7 @@
     },
 
     "images": [
-      "assets/images/posters/single/cars/bmw.jpg"
+      "assets/images/posters/single/cars/bmw-thumbnail.png"
     ]
   },
 
@@ -75,11 +75,11 @@
     },
 
     "images": [
-      "assets/images/posters/single/movies/hulk.png"
+      "assets/images/posters/single/movies/hulk-thumbnail.png"
     ]
   },
 
-       {
+  {
     "id": 5,
     "title": "F1",
     "featured": true,
@@ -95,7 +95,27 @@
     },
 
     "images": [
-      "assets/images/posters/single/cars/f1.png"
+      "assets/images/posters/single/cars/f1-thumbnail.png"
+    ]
+  },
+
+    {
+    "id": 6,
+    "title": "Naruto",
+    "featured": false,
+    "category": "Anime",
+    "type": "single",
+    "panels": 1,
+
+    "badge": "Best Seller",
+
+    "sizes": {
+      "A4": 199,
+      "A3": 349
+    },
+
+    "images": [
+      "assets/images/posters/single/anime/naruto-thumbnail.png"
     ]
   }
 ]
