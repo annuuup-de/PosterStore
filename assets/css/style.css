@@ -412,6 +412,300 @@ img{
 
 }
 
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero-modern {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #1e1b4b,
+        #312e81
+    );
+
+    color: white;
+
+}
+
+/* Grid */
+
+.hero-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.05) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.05) 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+
+}
+
+/* Glow */
+
+.hero-modern::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+
+    height: 700px;
+
+    border-radius: 50%;
+
+    background: rgba(99,102,241,.20);
+
+    top: -250px;
+
+    right: -200px;
+
+    filter: blur(90px);
+
+}
+
+.hero-modern::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(236,72,153,.15);
+
+    bottom: -200px;
+
+    left: -150px;
+
+    filter: blur(90px);
+
+}
+
+/* Badge */
+
+.hero-badge {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.08);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+}
+
+/* Title */
+
+.hero-title {
+
+    font-size: 4.5rem;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+}
+
+.gradient-text {
+
+    background: linear-gradient(
+        90deg,
+        #a78bfa,
+        #60a5fa
+    );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-subtitle {
+
+    max-width: 600px;
+
+    color: rgba(255,255,255,.8);
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+}
+
+/* Buttons */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+
+}
+
+/* Stats */
+
+.hero-stats {
+
+    display: flex;
+
+    gap: 50px;
+
+}
+
+.hero-stats h4 {
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+}
+
+.hero-stats span {
+
+    color: rgba(255,255,255,.7);
+
+}
+
+/* Image */
+
+.hero-image-wrapper {
+
+    position: relative;
+
+}
+
+.hero-image {
+
+    max-width: 500px;
+
+    filter: drop-shadow(0 30px 60px rgba(0,0,0,.35));
+
+    animation: float 6s ease-in-out infinite;
+
+}
+
+/* Floating cards */
+
+.hero-modern .floating-card {
+
+    position: absolute;
+
+    padding: 12px 20px;
+
+    border-radius: 16px;
+
+    backdrop-filter: blur(20px);
+
+    background: rgba(255,255,255,.08);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    font-weight: 600;
+
+}
+
+.hero-modern .anime {
+
+    top: 15%;
+
+    left: -5%;
+
+}
+
+.hero-modern .gaming {
+
+    top: 60%;
+
+    right: -5%;
+
+}
+
+.hero-modern .cars {
+
+    bottom: 10%;
+
+    left: 10%;
+
+}
+
+@keyframes float {
+
+    0%, 100% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-20px);
+
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .hero-title {
+
+        font-size: 3rem;
+
+    }
+
+    .hero-stats {
+
+        gap: 25px;
+
+        flex-wrap: wrap;
+
+    }
+
+    .floating-card {
+
+        display: none;
+
+    }
+
+}
+
 /* ===============================
    BUTTONS
 ==================================*/
